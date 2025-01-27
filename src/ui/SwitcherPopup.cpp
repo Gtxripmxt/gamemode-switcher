@@ -37,6 +37,10 @@ namespace switcher {
         m_miscMenu->setLayout(RowLayout::create()->setGap(15));
         m_mainLayer->addChildAtPosition(m_miscMenu, Anchor::Center, ccp(0, -50));
 
+        m_playerMenu = CCMenu::create();
+        m_playerMenu->setLayout(ColumnLayout::create()->setGap(15));
+        m_mainLayer->addChildAtPosition(m_playerMenu, Anchor::Center, ccp(0, -100));
+
         m_localGamemodeState = HookPlayLayer::get()->getCurrentPlayerState();
         m_localSpeedState = HookPlayLayer::get()->getCurrentBoostState();
 

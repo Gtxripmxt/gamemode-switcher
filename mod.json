@@ -1,5 +1,5 @@
 {
-	"geode": "4.1.1",
+	"geode": "4.2.0",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
@@ -14,13 +14,12 @@
 	"version": "v1.0.7",
 	"developer": "Capeling",
 	"description": "Allows you to edit your player aspects!",
-	"dependencies": [
-		{
-			"id": "geode.node-ids",
+	"dependencies": {
+		"geode.node-ids": {
 			"version": ">=1.18.0",
 			"importance": "required"
 		}
-	],
+	},
 	"resources": {
 		"spritesheets": {
 			"SwitcherSheet_01": [
@@ -28,13 +27,12 @@
 			]
 		}
 	},
-	"incompatibilities": [
-		{
-			"id": "capeling.gamemode_picker",
-			"importance": "superseded",
-			"version": "*"
-		}
-	],
+	"incompatibilities": {
+			"capeling.gamemode_picker": {
+				"importance": "superseded",
+				"version": "*"
+			}
+	},
 	"tags": [
 		"gameplay",
 		"interface",

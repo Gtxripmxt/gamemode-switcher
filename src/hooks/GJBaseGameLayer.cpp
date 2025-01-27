@@ -7,7 +7,7 @@ namespace switcher {
 
     bool HookGJBaseGameLayer::canBeActivatedByPlayer(PlayerObject* p0, EffectGameObject* p1) {
         if(m_fields->m_isPlayLayer) {
-            if(isPortalObject(p1->m_objectType) && !HookPlayLayer::get()->m_fields->m_portalsEnabled) {
+            if(isPortalType(p1->m_objectType) && !HookPlayLayer::get()->m_fields->m_portalsEnabled) {
                 return false;
             }
         }
@@ -23,7 +23,7 @@ namespace switcher {
         return true;
     }
 
-    bool HookGJBaseGameLayer::isPortalObject(GameObjectType type) {
+    bool HookGJBaseGameLayer::isPortalType(GameObjectType type) {
         return type == GameObjectType::CubePortal || type == GameObjectType::ShipPortal
             || type == GameObjectType::BallPortal || type == GameObjectType::UfoPortal  
             || type == GameObjectType::WavePortal || type == GameObjectType::RobotPortal 

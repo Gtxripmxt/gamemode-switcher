@@ -13,7 +13,7 @@ namespace switcher {
 
         bool init();
         bool canBeActivatedByPlayer(PlayerObject* p0, EffectGameObject* p1);
-        bool isPortalObject(GameObjectType type);
+        bool isPortalType(GameObjectType type);
     };
 }
 #endif

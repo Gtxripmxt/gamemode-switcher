@@ -1,4 +1,6 @@
 # Changelog
+## v1.0.8
+- Added mac support
 ## v1.0.7
 - Added reverse player button
 - Added toggle portals button (removes functionality from portals, does not delete them from the level)

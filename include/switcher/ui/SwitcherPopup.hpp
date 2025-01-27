@@ -17,6 +17,9 @@ namespace switcher {
         std::array<CCMenuItemToggler*, 5> m_miscBtns = {};
         cocos2d::CCMenu* m_miscMenu = nullptr;
 
+        std::array<CCMenuItemSpriteExtra*, 2> m_playerBtns = {};
+        cocos2d::CCMenu* m_playerMenu = nullptr;
+
         std::array<int, 7> m_actions = {-1, -1, -1, -1, -1, -1, -1};
         int m_localGamemodeState = 0;
         int m_localSpeedState = 0;
