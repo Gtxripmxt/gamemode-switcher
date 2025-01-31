@@ -28,10 +28,10 @@
 		}
 	},
 	"incompatibilities": {
-			"capeling.gamemode_picker": {
-				"importance": "superseded",
-				"version": "*"
-			}
+		"capeling.gamemode_picker": {
+			"importance": "superseded",
+			"version": ">=v1.0.0"
+		}
 	},
 	"tags": [
 		"gameplay",
